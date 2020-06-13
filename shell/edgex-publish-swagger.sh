@@ -19,7 +19,7 @@ if [ -z "$ARCH" ] || [ "$ARCH" != "arm64" ] ; then
 
     OASVERSION='3.0.0'
     ISPRIVATE=false
-    OWNER='EdgeXFoundry1'
+    OWNER='bill-mahoney'
 
     for API_FOLDER in ${API_FOLDERS}; do
         echo "=== Publish ${API_FOLDER} API ==="
