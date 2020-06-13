@@ -20,7 +20,8 @@ if [ -z "$ARCH" ] || [ "$ARCH" != "arm64" ] ; then
     OASVERSION='3.0.0'
     ISPRIVATE=false
     OWNER='bill-mahoney'
-    echo  "$APIKEY_VALUE"
+    echo  "APIKEY: $APIKEY"
+    echo  "APIKEY_VALUE: $APIKEY_VALUE"
     for API_FOLDER in ${API_FOLDERS}; do
         echo "=== Publish ${API_FOLDER} API ==="
         publishToSwagger "${APIKEY_VALUE}" "${API_FOLDER}" "${OASVERSION}" "${ISPRIVATE}" "${OWNER}" "${SWAGGER_DRY_RUN}"
