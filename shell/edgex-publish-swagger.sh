@@ -20,6 +20,7 @@ if [ -z "$ARCH" ] || [ "$ARCH" != "arm64" ] ; then
     OASVERSION='3.0.0'
     ISPRIVATE=false
     OWNER='bill-mahoney'
+    echo  "OWNER: $OWNER"
     echo  "APIKEY: $APIKEY"
     echo  "APIKEY_VALUE: $APIKEY_VALUE"
     for API_FOLDER in ${API_FOLDERS}; do
